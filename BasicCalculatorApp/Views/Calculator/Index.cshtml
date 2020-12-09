@@ -1,0 +1,38 @@
+﻿@model BasicCalculatorApp.Models.Calculator
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <form action="Calculator" method="post">
+        <h1 class="display-4">Basic Calculator</h1>
+        <p>
+            <label>Please type in the First Number: <input type="text" name="firstNum" value="@Model.firstNum"/></label>
+
+        </p>
+        <p>
+            <label>Please type in the Second Number: <input type="text" name="secondNum" value="@Model.secondNum"/></label>
+        </p>
+        <p>
+            <label for="operator">Please select an operator</label>
+            <button type="submit" name="op" value="Add" >Addition</button>
+            <button type="submit" name="op" value="Subtract">Subtraction</button>
+            <button type="submit" name="op" value="Multiply">Multiplication</button>
+            <button type="submit" name="op" value="Divide">Division</button>
+        </p>
+        <p></p>
+        <p></p>
+        <p>
+            <label>Result: </label>
+            <input type="text" value="@Model.result" style="width:280px"/>
+        </p>
+    </form>
+</body>
+</html>
