@@ -1,6 +1,6 @@
 using BasicCalculatorAppLibrary;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-
+using System;
 namespace BasicCalculatorAppUnitTests
 {
     [TestClass]
@@ -16,6 +16,7 @@ namespace BasicCalculatorAppUnitTests
             SimpleCalc calc = new SimpleCalc();
             decimal result = calc.additionFunc(num1, num2);
             Assert.AreEqual(expected, result);
+            
         }
         [TestMethod]
         public void SimpleCalc_Add_TwoNegativeNumbers()

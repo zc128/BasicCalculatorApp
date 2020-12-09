@@ -17,15 +17,21 @@ namespace BasicCalculatorAppLibrary
             return leftNumber * rightNumber;
         }
         public decimal divisionFunc(decimal leftNumber, decimal rightNumber)
-        {
+        {       if (rightNumber != 0)
+            {
                 return leftNumber / rightNumber;
+            }
+            else 
+            {
+                return decimal.MinValue;
+            }
         }
 
         public string OperatorSwitch(decimal leftNumber, decimal rightNumber, string operators)
-        {
+        {   
             string result;
             switch (operators)
-            {
+            {   
                 case "Add":
                     result = (leftNumber + rightNumber).ToString();
                     break;
