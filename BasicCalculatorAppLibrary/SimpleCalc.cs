@@ -18,7 +18,7 @@ namespace BasicCalculatorAppLibrary
         }
         public decimal divisionFunc(decimal leftNumber, decimal rightNumber)
         {
-            return leftNumber / rightNumber;
+                return leftNumber / rightNumber;
         }
 
         public string OperatorSwitch(decimal leftNumber, decimal rightNumber, string operators)
