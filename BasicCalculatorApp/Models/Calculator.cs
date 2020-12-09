@@ -7,8 +7,8 @@ namespace BasicCalculatorApp.Models
 {
     public class Calculator
     {
-        public double firstNum { get; set; }
-        public double secondNum { get; set; }
+        public decimal firstNum { get; set; }
+        public decimal secondNum { get; set; }
         public string result { get; set; }
 
     }
